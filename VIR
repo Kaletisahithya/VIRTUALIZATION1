@@ -1,1 +1,47 @@
 Lets see...............
+Virtualization is technology that lets you create useful IT services using resources that are bound to hardware.It allows you to use a physical machines full capacity by distributing 
+its capabilities among many users or environments. its the same hardware youre just using more of it more efficiently.
+
+What is file system ?
+ A file system is a process that manages how and where data on a storage disk typically a hard disk drive(HDD) is stored accessed and managed. it is a logical disk component
+ that manages a disk internal operations as it relates to a computer and is abstract to a human user.  
+ 
+  A file system usually consist of files separated into groups called directories.Directories can contain files or additional directories.Today the most commonly used file system
+  with windows is NTFS.
+  NTFS: NT file system which is also sometimes called the New Technology File System,is a process that the windows NT operating system uses for storing,organizing,and finding files on a
+  hard disk efficiently.NTFS was first introduced in 1993,as a part of the windows NT 3.1 release.
+  
+   Some file systems used by linux are : EXT4,EXT3,EXT2-mostly linux used EXT4 file system because it is most stable and flexible file systems out there
+                                           XFS,HPFS,VFAT,FreeBSD,FAT32 ...etc
+										   
+	VMWARE vs VIRTUALBOX
+	VMWARE                                                           |           VIRTUALBOX
+--VMware is virtualizatin software that helps you to run multiple    |         --Virtualbox is an oracle to provide host based virtualization.
+operating systems ina single host.                                   |         --It is used for educational and private purposes.
+--It is used for enterprise and home purposes.                       |         --Offers virtualization at both hardware and software levels.
+--Offers virtualization at the hardware level.                       |         --It can run on linux,windows,solaris and macos.
+                                                                     |         --It is an open source tool.
+--It can run on Linux,Windowsand Macos.                              |         --It offers machine encryption with the extenxion pack.
+--It is not an open source tool.                                     |         --It offers shared storage support with NFS,CIFS and iSCSI.
+--It offers limited virtual machine encryption.                      |
+--It does not offer any shared storage support.                      |         --Virtualbox doesnot allow ease of access as compared to VMware.
+--VMware offers ease of access to the users.                         |
+--It supports VMDK disk format.                                      |          --It supports VDI,VHD,VMDK and HDD disk formats.
+
+VIRTUAL MACHINES:
+             A computer inside a computer which thinks its the original computer but its not .virtual machine is a computer inside a physical computer. lets take my computer 
+which is laptop it consists of hardware like CPU,RAM,STORAGE,GPC ETC  and it needs an operating system on top of it to use the system.in my computer I use windows as os,
+but if u want to use linux then u dont need to buy another computer and install it ,by using virtualization we can put another computer in my computer and can install linux in it.
+how is it done?  By using hyper visor ,the job of hypervisor is to create a bunch of small virtual computers in my computer those small computers are not physical. these small 
+ virtual computers will have RAM,CPU,STORAGE everything a normal computer has.but actually it borrows that all those from my computer.i.e it uses my computer resources. this is 
+ how a type two hypervisor function i.e Virtualbox.here windows is the host and the one we create and install using hyperware i.e. virtualbox that os is called guest.
+ 
+ The type 1 hypervisoris VMware -- this is used in companies.this type will not be installed on top of the existing operating system.This will be installed directly on top of the hardware
+ i.e. ram.cpu.storage etc .the companies will take vast amount of these hardware and directly install type1 hypervisor i.e. VMware.And then we can install any different type of os by allocating
+ memory by splitting from the hardware.But both type 1 and type 2 hypervisors both do dthe same thing that is creating virtual machines.but here the hypervisor will be the host .
+  setting virtualbox:
+                     --need a real computer which is good like 4gb or more ram because the virtual machine which we create use our computer resources.
+                     --should enable hardwarevirtualization support in advanced settings from BIOS if we want 64bit image .
+                     --restart and press f12 and go to enter setup then we will go to bios, we should move to advanced --cpu configuration and enable intel virtualization 					 
+	                 --download the iso of the type of os u want and also download hypervisor i.e. Virtualbox for windows and install it.
+                     --virtualbox needs extension pack so we should download and should install that.					 
